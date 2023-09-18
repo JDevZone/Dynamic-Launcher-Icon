@@ -4,5 +4,11 @@ Sample app for setting different app launcher icon dynamically. In the below ima
 <br><br>
 
 ## Screen UI
+<div>
+<img width='30%' src="graphics/main.png"/>
+<img width='4%'/>
+<img width='30%' src="graphics/icon_1.png"/>
+<img width='4%'/>
+<img width='30%' src="graphics/icon_2.png"/>
+</div>
 
-<img width='25%' src="graphics/main.png"/>
