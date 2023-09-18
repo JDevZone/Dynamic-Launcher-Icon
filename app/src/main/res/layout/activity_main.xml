@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/currentIconIV"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="20dp"
+        android:background="@null"
+        app:layout_constraintBottom_toTopOf="@+id/currentHeading"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/currentHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/current_launcher"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@id/currentLauncher"
+        app:layout_constraintEnd_toEndOf="@+id/currentLauncher"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@+id/currentLauncher"
+        app:layout_constraintTop_toBottomOf="@+id/currentIconIV" />
+
+    <TextView
+        android:id="@+id/currentLauncher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/launcher1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentHeading"
+        tools:text="Launcher 1" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/launcher1"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text="@string/launcher_1"
+        app:cornerRadius="48dp"
+        app:icon="@mipmap/ic_launcher"
+        app:iconSize="28dp"
+        app:iconTint="@color/gray"
+        app:iconTintMode="add"
+        app:strokeWidth="0.1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/launcher2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentLauncher" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/launcher2"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text="@string/launcher_2"
+        app:cornerRadius="48dp"
+        app:icon="@mipmap/ic_launcher_2"
+        app:iconSize="28dp"
+        app:iconTint="@color/gray"
+        app:iconTintMode="add"
+        app:strokeWidth="0.1dp"
+        app:layout_constraintBottom_toBottomOf="@id/launcher1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/launcher1"
+        app:layout_constraintTop_toTopOf="@+id/launcher1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
