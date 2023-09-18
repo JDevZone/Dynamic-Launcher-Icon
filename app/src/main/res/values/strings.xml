@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Dynamic Launch</string>
+    <string name="launcher_1">Launcher 1</string>
+    <string name="launcher_2">Launcher 2</string>
+    <string name="launcher_d">Launcher %d</string>
+    <string name="current_launcher">Current Launcher</string>
+</resources>
